@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #1de9b6; /* Verde Água vibrante */
+  --secondary-color: #ff4081; /* Rosa vibrante */
+  --bg-color: #e0f2f1; /* Fundo verde água bem clarinho */
+  --text-dark: #2d3436;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Gradiente bonito para Navbar e Footer */
+.bg-gradient-custom {
+  background: linear-gradient(90deg, var(--primary-color) 0%, #00bfa5 100%);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Botões personalizados */
+.btn-custom-green {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+.btn-custom-green:hover {
+  background-color: #00bfa5; /* Tom mais escuro */
+  color: #fff;
+}
+
+.btn-custom-pink {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+.btn-custom-pink:hover {
+  background-color: #f50057; /* Rosa mais escuro */
+  color: #fff;
+}
+
+/* Card flutuante e centralizado */
+.card-custom {
+  background: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Títulos coloridos */
+.text-pink {
+  color: var(--secondary-color);
+}
+.text-green {
+  color: #009688;
+}
+
+/* Garante que o conteúdo ocupe a altura toda */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
